@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet HTML 1</title>
+    <title> Mon Porfolio</title>
 </head>
 <body>
     <header>
         <nav>
+            <div>
+                <img src="img/logo dev.jpg" alt="logo">
+                <h1 id="accueil">BIENVENUE SUR MON PORTFOLIO</h1>
+            </div>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">A propos</a></li>
@@ -18,21 +22,37 @@
         </nav>
     </header>
     <main>
-        <h1 id="accueil">BIENVENUE SUR MON PORTFOLIO</h1>
+        <!--section hero-->
+        <section>
+            <img src="img/dev web.jpg" alt="hero-section">
+            <div>
+                <h2>Boostez votre présence digitale avec un developpeur à l'écoute.</h2>
+                <a href="#contact">Pour plus d'information contactez-moi</a>
+            </div>
+        </section>
+
+        <!--section apropos-->
         <section id="apropos">
-            <h2>A propos</h2>
-            <p>Je suis étudiant en informatique, je suis passionné par le developpement web et j'apprends HTML, CSS, JavaScript.</p>
+            <div>
+                <h2>A propos de moi</h2>
+                <p>Je suis étudiant en informatique, je suis passionné par le developpement web et j'apprends HTML, CSS, JavaScript.</p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse obcaecati vero nobis earum, cum excepturi iusto eaque natus commodi molestias beatae placeat numquam nihil magni aliquid nemo fuga itaque impedit eos ab quas maiores? Reprehenderit, quis dolor. Id odit eius, repudiandae facere temporibus, omnis similique nulla eveniet dignissimos velit alias, tenetur tempora! In delectus beatae repudiandae vero autem nulla commodi minus possimus ratione molestiae iure quibusdam quisquam quas mollitia, tempore eveniet quos ipsa pariatur, officiis recusandae quae repellendus! Nobis quam corrupti dolor vitae saepe porro sed molestias molestiae ipsam distinctio ipsum qui similique officia quidem dolores tempora, sapiente facilis praesentium?
+            </div><br>
             <video width="200" controls>
-                <source src="mon projet.mp4" type="video/mp4">
+                <source src="video/mon projet.mp4" type="video/mp4">
             </video>
         </section>
+
+        <!--section de realisation--> 
         <section id="travail">
-            <h2>Travail</h2>
+            <h2>Travaux réalisés</h2>
             <ul>
                 <li>Projet 1: Synchronisation Git et Github</li>
                 <li>Projet 2: Création de mon portfolio avec HTML</li>
             </ul>
         </section>
+
+        <!--Presentation du CV-->
         <section id="CV">
             <h2>Mon CV</h2>
             <table border="1">
@@ -53,6 +73,8 @@
                 </tr>
             </table>
         </section>
+
+        <!--Pour les contacts -->
         <section id="contact">
             <h2>Contactez-moi</h2>
             <form>
