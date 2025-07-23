@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* navbar  */
+nav {
+    background-color: #2c3e50;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Centrage des titres */
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+/* Ligne décorative sous les titres */
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #3498db;
+    border-radius: 2px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #3498db;
+}
+
+/* contenu principal */
+main {
+    margin-top: 80px;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+/* section hero */
+#accueil {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/dev web.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem; /* Espace pour le texte */
+    width: 100%;
+
+}
+
+.accueil-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#accueil h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem; /* Espace entre le titre et le sous-titre */
+}
+
+#accueil p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+#accueil h3{
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem; /* Espace entre le titre et le sous-titre */
+     max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#accueil a {
+    display: inline-block; /* Pour que le lien soit un bloc */
+    background-color: #f4f4f4da;
+    color: #2c3e50;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+#accueil a:hover {
+    background-color: #2c3e50;
+    color: white;
+    transform: translateY(-2px); /* Légère élévation au survol */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* section à propos */
+
+#apropos {
+    background-color: #f4f4f4da;
+    padding: 4rem 2rem;
+}
+
+.apropos-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.apropos-texte {
+    flex: 1; /* Prend la moitié de l'espace disponible */
+    margin-right: 20px; /* Espace entre le texte et la vidéo */
+}
+
+.apropos-video {
+    flex: 0 0 300px; /* Prend l'autre moitié de l'espace disponible */
+    margin-left: 20px; /* Espace entre le texte et la vidéo */
+}
+
+/* Work and CV sections */
+#travail, #CV {
+    background-color: #9ed5fa;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    color: #333;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond légèrement plus clair pour les en-têtes */
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond plus clair pour les en-têtes */
+    font-weight: bold; 
+}
+
+/* section contact */
+
+#contact {
+    background-color: #f4f4f4da;
+    padding: 4rem 2rem;
+}
+#contact h2 {
+    text-align: center;
+    margin-bottom: 2rem; 
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+#contact form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52,152,219,0.3);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+button {
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+     font-size: 1.1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: #3498db; /* Couleur de fond du bouton */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Ombre légère */
+}
+
+button:hover {
+    background-color: #2c3e50; /* Couleur de fond du bouton au survol */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* styles des boxes */
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 2rem;
+}
+
+.box {
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc */
+    color: #333; /* Texte foncé */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.box h3 {
+    color: #2c3e50; /* Couleur du titre plus foncée */
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.box p {
+    color: #666; /* Couleur du texte gris foncé */
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-color: #030303; /* Bordure bleue au survol */
+    background-color: rgba(255, 255, 255); /* Fond bleu clair au survol */
+}
+
+.allbox-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 2rem;
+}
+
+.allbox {
+    padding: 4rem;
+    border-radius: 10px; /* Coins arrondis */
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Transition pour l'effet de survol */
+    background: transparent; /* Fond transparent */
+    color: #333; /* Couleur du texte */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Ombre légère */
+    word-wrap: break-word; /* Permet au texte long de se couper */
+    overflow-wrap: break-word; /* Support supplémentaire pour la coupure des mots */; /* Réduire le padding qui était à 6rem */
+    min-height: 200px;
+}
+
+.allbox:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Ombre plus prononcée au survol */
+    border-color: #00558d; /* La bordure devient plus foncée au survol */
+    background-color: rgba(255, 255, 255); /* Fond bleu clair au survol */
+    color: #333; /* Texte foncé au survol */
+}
+
+.allbox p {
+    margin-bottom: 1rem; /* Espace entre les paragraphes */
+    font-size: 1.8rem; 
+    
+}
+
+.allbox h4 {
+    padding: 0; 
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

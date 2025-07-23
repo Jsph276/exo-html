@@ -2,9 +2,10 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Mon Porfolio</title>
-        <link rel="shortcut icon" href="img/logo.png" type="image/*">
+        <link rel="shortcut icon" href="images/logo dev.jpg" type="image/*">
         <meta name="description" content="Mon portfolio de developpeur web, découvrez mes projets et compétences.">
         <meta name="keywords" content="portfolio, développeur web, projets web, compétences, HTML, CSS, JavaScript, création de site, développement web, web design, intégration, front-end, back-end, programmation, site internet, expérience professionnelle">
 
@@ -12,59 +13,90 @@
         <meta property="og:description" content="Découvrez mes projets et compétences en développement web.">
         <meta property="og:image" content="img/logo.png">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://votre-site.com/">
+        <meta property="og:url" content=" https://jsph276.github.io/exo-html/index.html">
 
         <meta name="robots" content="index, follow">
     </head>
-    
+
     <body>
-        <header>
-            <nav>
-                <div>
-                    <img src="img/logo dev.jpg" alt="logo">
-                    <h1 id="accueil">BIENVENUE SUR MON PORTFOLIO</h1>
-                </div>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#apropos">A propos</a></li>
-                    <li><a href="#travail">Travail</a></li>
-                    <li><a href="#CV">CV</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+
+        <!-- navbar -->
+
+        <nav>
+            <img src="images/logo dev.jpg" alt="logo" class="logo">
+            <ul class="menu">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#travail">Travail</a></li>
+                <li><a href="#CV">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
         <main>
+
             <!--section hero-->
-            <section>
-                <img src="img/dev web.jpg" alt="hero-section">
-                <div>
-                    <h2>Boostez votre présence digitale avec un developpeur à l'écoute.</h2>
+
+            <section id="accueil">
+                <div class="accueil-content">
+                    <h1>BIENVENUE SUR MON PORTFOLIO</h1>
+                    <h3>Boostez votre présence digitale avec un dévéloppeur à l'écoute.</h3>
+                    <p>Découvrez comment vos utilisateurs utilisent votre site web en temps réel ou consultez les tendances pour observer l'évolution des performances au fil du temps.</p>
                     <a href="#contact">Pour plus d'information contactez-moi</a>
                 </div>
             </section>
 
             <!--section apropos-->
+    
             <section id="apropos">
-                <div>
-                    <h2>A propos de moi</h2>
-                    <p>Je suis étudiant en informatique, je suis passionné par le developpement web et j'apprends HTML, CSS, JavaScript.</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse obcaecati vero nobis earum, cum excepturi iusto eaque natus commodi molestias beatae placeat numquam nihil magni aliquid nemo fuga itaque impedit eos ab quas maiores? Reprehenderit, quis dolor. Id odit eius, repudiandae facere temporibus, omnis similique nulla eveniet dignissimos velit alias, tenetur tempora! In delectus beatae repudiandae vero autem nulla commodi minus possimus ratione molestiae iure quibusdam quisquam quas mollitia, tempore eveniet quos ipsa pariatur, officiis recusandae quae repellendus! Nobis quam corrupti dolor vitae saepe porro sed molestias molestiae ipsam distinctio ipsum qui similique officia quidem dolores tempora, sapiente facilis praesentium?
-                </div><br>
-                <video width="200" controls>
-                    <source src="video/mon projet.mp4" type="video/mp4">
-                </video>
+                <div class="apropos-container">
+                    <div class="apropos-texte">
+                    <h2>À propos de moi</h2>
+                    <p>
+                        Je suis étudiant en informatique, passionné par le développement web.<br>
+                        J'apprends HTML, CSS, JavaScript et je réalise des projets pour améliorer mes compétences.<br>
+                        Curieux, motivé et créatif, je cherche toujours à progresser et à relever de nouveaux défis.
+                    </p>
+                    <ul>
+                        <li>Étudiant à RUSTA Université</li>
+                        <li>Développement Front-End</li>
+                        <li>Création de sites web modernes</li>
+                    </ul>
+                    </div>
+                    <div class="apropos-video">
+                    <video width="300px" controls>
+                        <source src="videos/mon projet.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la vidéo.
+                    </video>
+                    </div>
+                </div>
             </section>
 
-            <!--section de realisation--> 
+            <!--section travail-->
+
             <section id="travail">
                 <h2>Travaux réalisés</h2>
-                <ul>
-                    <li>Projet 1: Synchronisation Git et Github</li>
-                    <li>Projet 2: Création de mon portfolio avec HTML</li>
-                </ul>
+                <div class="box-container">
+                    <div class="box">
+                        <h3>Git et Github</h3>
+                        <p>Synchronisation et gestion de versions de projets avec Git et Github. Maîtrise des commandes de base et du workflow.</p>
+                    </div>
+                    
+                    <div class="box">
+                        <h3>Portfolio HTML/CSS</h3>
+                        <p>Création d'un portfolio personnel responsive avec HTML5 et CSS3. Implementation des meilleures pratiques de développement web.</p>
+                    </div>
+                    
+                    <div class="box">
+                        <h3>Projets à venir</h3>
+                        <p>De nouveaux projets passionnants sont en cours de développement. Restez à l'écoute pour les futures mises à jour.</p>
+                    </div>
+                </div>
             </section>
 
-            <!--Presentation du CV-->
+            <!--section CV-->
+
             <section id="CV">
                 <h2>Mon CV</h2>
                 <table border="1">
@@ -86,24 +118,52 @@
                 </table>
             </section>
 
-            <!--Pour les contacts -->
+            <!--section contact-->
+
             <section id="contact">
-                <h2>Contactez-moi</h2>
+                <h2>Contactez-nous</h2>
+                
+                <!-- infoline-->
+                <div class="allbox-container">
+                    <div class="allbox">
+                        <p><strong>Adresse</strong> </p>
+                        <h4>Abidjan</h4>
+                        <h4>Yopougon annaneraie</h4>
+                    </div>
+                    <div class="allbox">
+                        <p><strong>Téléphone</strong> </p>
+                        <h4>+225 05 66 30 23 81</h4>
+                    </div>
+                    <div class="allbox">
+                        <p><strong>Email</strong>  </p>
+                        <h4>josephemmanuelassiman@gmail.com</h4>
+                    </div>
+                </div>
+
+                <!--form-->
                 <form>
-                    <label for="nom">Nom: </label>
-                    <input type="text" id="nom" name="nom"><br><br>
+                    <div>
+                        <label for="name">Nom:</label><br>
+                        <input type="text" id="name" name="name" placeholder="saisissez votre nom" required>
+                    </div>
 
-                    <label for="prenom">Prénom: </label>
-                    <input type="text" id="prenom" name="prenom"><br><br>
-
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email"><br><br>
-
-                    <input type="submit" value="Envoyer">
-
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="saisissez votre email" required>
+                    </div>
+                    
+                    <div>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+            
+                    <button type="submit">Envoyer</button>
                 </form>
             </section>
+
         </main>
+
+
         <footer>
             <p>&copy; 2025 Mon Portfolio - Tous droits réservés - Cordialement Joseph</p>
         </footer>
